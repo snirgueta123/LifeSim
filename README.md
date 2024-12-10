@@ -8,8 +8,6 @@ LifeSim is a simulation of Conway's Game of Life, a zero-player game that models
 - [How to Run the Project](#how-to-run-the-project)
 - [Game Rules](#game-rules)
 - [Example Input/Output](#example-inputoutput)
-- [Screenshots](#screenshots)
-- [Technologies Used](#technologies-used)
 - [License](#license)
 
 ## What is Conway's Game of Life?
@@ -31,4 +29,24 @@ The game doesn't require human intervention once started. It runs automatically 
    To clone this repository, run the following command:
    ```bash
    git clone https://github.com/snirgueta123/LifeSim.git
+
+## Game Rules
+
+The Game of Life follows three basic rules for each cell:
+1.Birth: A dead cell with exactly three live neighbors will become alive.
+2.Survival: A live cell with two or three live neighbors will continue to live.
+3.Death: A live cell with fewer than two live neighbors dies from loneliness. A live cell with more than three live neighbors dies from overcrowding.
+
+These rules are applied simultaneously to all cells in the grid at each step.
+
+## Example Input/Output
+
+Example 1:
+ - Initial Grid:
+    - Random initialization of cells (some cells are alive, some are dead).
+ - First Generation:
+    -After clicking the "Next Generation" button, the grid updates based on the rules, and you can observe cells either dying or coming to life.
+Example 2:
+ 1.Initial Setup: Random configuration.
+ 2.After clicking "Next Generation": The grid will change, with some cells alive and others dead, based on the neighbor count.
 
